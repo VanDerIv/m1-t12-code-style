@@ -15,7 +15,7 @@ public class DepositCalculator {
         return Math.round(amount * scale) / scale;
     }
 
-    void calculate() {
+    void run() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите сумму вклада в рублях:");
         int depositAmount = scanner.nextInt();
@@ -37,6 +37,6 @@ public class DepositCalculator {
     }
 
     public static void main(String[] args) {
-        new DepositCalculator().calculate();
+        new DepositCalculator().run();
     }
 }
